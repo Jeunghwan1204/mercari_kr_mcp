@@ -1,0 +1,44 @@
+# --- 비밀 / Secrets (절대 커밋 금지) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# --- 데이터 / Data (메루카리 응답·캐시는 커밋하지 않음) ---
+.cache/
+cache/
+*.sqlite
+*.db
+recordings/
+cassettes/
+exports/
+*.csv
+
+# --- 로그 / Logs ---
+*.log
+logs/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# --- 도구 / Tools ---
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- OS / Editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
